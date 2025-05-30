@@ -5,28 +5,26 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp"
-    android:gravity="center"
-    android:layoutDirection="rtl">
+    android:gravity="center">
 
     <EditText
         android:id="@+id/phoneInput"
+        android:hint="📞 رقم الهاتف"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="📞 أدخل رقم الهاتف"
-        android:inputType="phone"
-        android:layout_marginBottom="16dp"/>
+        android:inputType="phone"/>
 
     <EditText
         android:id="@+id/amountInput"
+        android:hint="💰 المبلغ"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="💰 أدخل المبلغ"
-        android:inputType="number"
-        android:layout_marginBottom="24dp"/>
+        android:inputType="numberDecimal"/>
 
     <Button
-        android:id="@+id/sendButton"
+        android:id="@+id/sendBtn"
+        android:text="إرسال إلى البوت"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="🚀 نفّذ التعبئة"/>
+        android:layout_marginTop="20dp"/>
 </LinearLayout>
